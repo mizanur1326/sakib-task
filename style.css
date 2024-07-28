@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font css */
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* font css end */
+
+.body {
+    background-color: #f9fbff;
+    max-width: 1440px;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: 127px;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-white:hover {
+    background-color: #ff5200;
+    color: #fff;
+}
+
+.customize-plan {
+    max-width: 1200px;
+    /* margin: 20px auto; */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan-details {
+    background-color: #eff3f3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.contact-btn{
+    width: 100%;
+    background-color: #FF5E29;
+    color: #fff;
+    border-radius: 0px 0px 10px 10px ;
+    text-align: center;
+    
+}
+
+hr {
+    color: #898fa2;
+}
+
+
+.btn-orange {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-orange:hover {
+    background-color: #ff5200;
+}
+
+.bill-type {
+    background-color: #EFF5F5;
+    color: #474848;
+    border: none;
+}
+
+
+.feature-item {
+    background-color: #EFF5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 92px;
+    max-width: 800px;
+}
+
+.feature-details {
+    max-width: 70%;
+}
+
+.form-select {
+    width: 50%;
+}
+
+.add-module{
+    background-color: #fff;
+    color: #474848;
+}
+
+.main{
+    margin-bottom: 50px;
+}
+
+footer{
+    background-color: #253053;
+    color: #fff;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+footer a:hover{
+    color: #FF5E29;
+}
+
+.signup-btn{
+    background-color: #FF5E29;
+    color: #fff;
+    padding: 15px;
+}

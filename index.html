@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/74bd3f5679.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Timedesk HTML Page with Bootstrap 5</title>
+  </head>
+
+  <body class="body">
+    <header class="header my-4">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container d-flex justify-content-between">
+          <div>
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="logo" class="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown me-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="featuresDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Features
+                </a>
+                <div class="dropdown-menu" aria-labelledby="featuresDropdown">
+                  <a class="dropdown-item" href="#">Feature 1</a>
+                  <a class="dropdown-item" href="#">Feature 2</a>
+                  <a class="dropdown-item" href="#">Feature 3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown me-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="appsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Apps
+                </a>
+                <div class="dropdown-menu" aria-labelledby="appsDropdown">
+                  <a class="dropdown-item" href="#">App 1</a>
+                  <a class="dropdown-item" href="#">App 2</a>
+                  <a class="dropdown-item" href="#">App 3</a>
+                </div>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="btn btn-white" href="#" role="button">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-white" href="#" role="button">Log In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="customize-plan">
+              <h2 class="poppins-medium">Customize Your Plan</h2>
+              <hr />
+
+              <form>
+                <div class="mb-3">
+                  <label class="form-label poppins-medium"
+                    >Choose Billing Type</label
+                  ><br />
+                  <div class="btn-group" role="group">
+                    <input
+                      type="radio"
+                      class="btn-check bill-type"
+                      name="billingType"
+                      id="billedMonthly"
+                    />
+                    <label
+                      class="btn btn-outline-primary bill-type poppins-medium me-3"
+                      for="billedMonthly"
+                      >Billed Monthly</label
+                    >
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="billingType"
+                      id="billedQuarterly"
+                    />
+                    <label
+                      class="btn btn-outline-primary bill-type poppins-medium me-3"
+                      for="billedQuarterly"
+                      >Billed Quarterly</label
+                    >
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="billingType"
+                      id="billedYearly"
+                    />
+                    <label
+                      class="btn btn-outline-primary bill-type poppins-medium me-3"
+                      for="billedYearly"
+                      >Billed Yearly</label
+                    >
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="managers" class="form-label poppins-medium"
+                    >How Many Managers Do You Want?</label
+                  >
+                  <select class="form-select poppins-regular" id="managers">
+                    <option selected>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="employees" class="form-label poppins-medium"
+                    >How Many Employees Do You Need?</label
+                  >
+                  <select class="form-select poppins-regular" id="employees">
+                    <option selected>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="storage" class="form-label poppins-medium"
+                    >How Many Storage Do You Need?</label
+                  >
+                  <select class="form-select poppins-regular" id="storage">
+                    <option selected>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                  </select>
+                </div>
+
+                <h3 class="poppins-medium">Choose Features</h3>
+                <div class="feature-item">
+                  <div class="feature-details">
+                    <h5 class="d-flex align-baseline poppins-medium">
+                      <img
+                        src="images/icons/employee.png"
+                        class="me-3"
+                        alt=""
+                      />Employee
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <button class="btn btn-outline-secondary add-module">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      id="addModuleCheckbox"
+                    />
+                    <label
+                      class="form-check-label poppins-regular"
+                      for="addModuleCheckbox"
+                      >Add Module</label
+                    >
+                  </button>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-details">
+                    <h5 class="d-flex align-baseline poppins-medium">
+                      <img
+                        src="images/icons/manager.png"
+                        class="me-3"
+                        alt=""
+                      />Manager
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <button class="btn btn-outline-secondary add-module">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      id="addModuleCheckbox"
+                    />
+                    <label
+                      class="form-check-label poppins-regular"
+                      for="addModuleCheckbox"
+                      >Add Module</label
+                    >
+                  </button>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-details">
+                    <h5 class="d-flex align-baseline poppins-medium">
+                      <img
+                        src="images/icons/client.png"
+                        class="me-3"
+                        alt=""
+                      />Client
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <button class="btn btn-outline-secondary add-module">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      id="addModuleCheckbox"
+                    />
+                    <label
+                      class="form-check-label poppins-regular"
+                      for="addModuleCheckbox"
+                      >Add Module</label
+                    >
+                  </button>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-details">
+                    <h5 class="d-flex align-baseline poppins-medium">
+                      <img
+                        src="images/icons/client.png"
+                        class="me-3"
+                        alt=""
+                      />Client
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <button class="btn btn-outline-secondary add-module">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      id="addModuleCheckbox"
+                    />
+                    <label
+                      class="form-check-label poppins-regular"
+                      for="addModuleCheckbox"
+                      >Add Module</label
+                    >
+                  </button>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-details">
+                    <h5 class="d-flex align-baseline poppins-medium">
+                      <img
+                        src="images/icons/client.png"
+                        class="me-3"
+                        alt=""
+                      />Client
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <button class="btn btn-outline-secondary add-module">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      id="addModuleCheckbox"
+                    />
+                    <label
+                      class="form-check-label poppins-regular"
+                      for="addModuleCheckbox"
+                      >Add Module</label
+                    >
+                  </button>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-details">
+                    <h5 class="d-flex align-baseline poppins-medium">
+                      <img
+                        src="images/icons/client.png"
+                        class="me-3"
+                        alt=""
+                      />Client
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <button class="btn btn-outline-secondary add-module">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      id="addModuleCheckbox"
+                    />
+                    <label
+                      class="form-check-label poppins-regular"
+                      for="addModuleCheckbox"
+                      >Add Module</label
+                    >
+                  </button>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-details">
+                    <h5 class="d-flex align-baseline poppins-medium">
+                      <img
+                        src="images/icons/client.png"
+                        class="me-3"
+                        alt=""
+                      />Client
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <button class="btn btn-outline-secondary add-module">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      id="addModuleCheckbox"
+                    />
+                    <label
+                      class="form-check-label poppins-regular"
+                      for="addModuleCheckbox"
+                      >Add Module</label
+                    >
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="plan-details">
+              <h3 class="poppins-medium">Your Plan</h3>
+              <hr />
+              <ul class="list-unstyled poppins-regular">
+                <li>
+                  <img
+                    src="images/icons/select-all.png"
+                    class="me-2"
+                    alt=""
+                  />Lorem ipsum dolor
+                </li>
+                <li>
+                  <img
+                    src="images/icons/select-all.png"
+                    class="me-2"
+                    alt=""
+                  />Lorem ipsum dolor ipsum
+                </li>
+                <li>
+                  <img
+                    src="images/icons/select-all.png"
+                    class="me-2"
+                    alt=""
+                  />Lorem ipsum dolor ipsum met
+                </li>
+                <li>
+                  <img
+                    src="images/icons/select-all.png"
+                    class="me-2"
+                    alt=""
+                  />Lorem ipsum dolor ipsum met
+                </li>
+                <li>
+                  <img
+                    src="images/icons/select-all.png"
+                    class="me-2"
+                    alt=""
+                  />Lorem ipsum dolor ipsum met
+                </li>
+              </ul>
+            </div>
+            <button class="btn contact-btn poppins-medium">
+              Contact Sales
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <!-- Section: Links Start-->
+        <section class="links">
+          <div class="row gap-3">
+            <div class="col-lg-2 mt-5">
+              <h5 class="mb-4"><a href="#">Software</a></h5>
+              <p class="mb-2">Features overview</p>
+              <p class="mb-2">Solutions</p>
+              <p class="mb-2">Free time tracking app</p>
+              <p class="mb-2">Integrations</p>
+              <p class="mb-2">Download app</p>
+              <p class="mb-2">Demo</p>
+              <p class="mb-2">Time tracking API</p>
+              <p class="mb-2">Request a feature</p>
+            </div>
+
+            <div class="col-lg-2 mt-5">
+              <h5 class="mb-4"><a href="#">Learning Center</a></h5>
+              <p class="mb-2">Time tracking resources</p>
+              <p class="mb-2">Workforce management resources</p>
+              <p class="mb-2">Business resources</p>
+              <p class="mb-2">Blog</p>
+            </div>
+
+            <div class="col-lg-2 mt-5">
+              <h5 class="mb-4"><a href="#">More</a></h5>
+              <p class="mb-2">Help Center</p>
+              <p class="mb-2">FAQ</p>
+              <p class="mb-2">Status</p>
+            </div>
+
+            <div class="col-lg-2 mt-5">
+              <h5 class="mb-4"><a href="#">Company</a></h5>
+              <p class="mb-2">About us</p>
+              <p class="mb-2">Contact Us</p>
+              <p class="mb-2">Reviews</p>
+              <p class="mb-2">Customer stories</p>
+              <p class="mb-2">Careers</p>
+              <p class="mb-2">Press</p>
+            </div>
+
+            <div class="col-lg-3 mt-5">
+              <h5 class="mb-4"><a href="#">Ready to get started?</a></h5>
+              <button type="submit" class="btn signup-btn">Sign me up</button>
+              <hr style="color: #d8d8d8" class="my-3" />
+              <p>Follow us</p>
+              <div class="d-flex gap-3">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Links End-->
+
+        <!-- Section: Copyright -->
+        <section class="mt-5">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-2 d-flex justify-content-between">
+                <div>
+                    <img src="images/logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="p-3">
+                    <p>Copyright © 2024 Netsoft Holdings, LLC <br>
+                        11650 Olio Road, Suite #1000 - 193 Fishers, IN 46037</p>
+                  </div>
+            </div>
+
+
+
+            <div class="col-lg-5 d-flex mx-auto gap-5">
+                <p>Terms</p>
+                <p>Privacy</p>
+                <p>GDPR compliance</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+        </section>
+        <!-- Section: Copyright -->
+      </div>
+      <!-- Grid container -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
